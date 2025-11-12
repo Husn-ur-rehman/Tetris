@@ -14,6 +14,7 @@
 #include <limits>
 #include <iostream>
 #include <string>
+#include <climits>
 
 // --- Config ---
 const int BOARD_W = 10;
