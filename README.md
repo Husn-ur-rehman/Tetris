@@ -63,13 +63,6 @@ If your system does not provide `libraylib` via package manager, install raylib 
 
 ---
 
-## Running
-
-- Start the program, then use the menu to choose `Start Game` -> select `Manual` or `AI` mode.
-- In Manual mode, use the controls below.
-
----
-
 ## Controls (Manual Mode)
 
 - Left / Right arrows: move piece
@@ -88,10 +81,6 @@ If your system does not provide `libraylib` via package manager, install raylib 
   - For every rotation and every horizontal placement the current piece can legally occupy, the AI "drops" the piece and evaluates the resulting board with a linear heuristic.
   - The heuristic uses weighted features: number of lines cleared, number of holes, aggregate column height, and bumpiness (column height differences).
   - The placement that yields the highest heuristic score is chosen and placed immediately.
-
-- Note: The AI does NOT perform multi-piece DFS/lookahead in the current `tetris_merged.cpp`. You can extend the AI to depth-2 or use beam search for improved play.
-
-- Recent fix: The `Game::collidesPiece` function was adjusted so the spawn area (negative Y positions) is treated the same as `Board::collides`, allowing the AI's drop-height search to compute valid landing rows. This resolves a bug where AI placements weren't appearing on the board.
 
 ---
 
