@@ -9,11 +9,6 @@ The merged file `tetris_merged.cpp` provides a menu to choose between modes and 
 
 ---
 
-<p align="center">
-  <img src="./Images/1.png" width="30%" />
-  <img src="./Images/2.png" width="30%" />
-  <img src="./Images/3.png" width="30%" />
-</p>
 
 ## Features
 
