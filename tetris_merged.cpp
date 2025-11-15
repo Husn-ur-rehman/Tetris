@@ -426,15 +426,24 @@ public:
             if(move.score < -1e8) {
                 gameOver = true;
             } else {
-                // Apply rotation
-                cur.rotation = move.rotationIndex;
-                // Move to column
-                cur.x = move.leftC;
-                // Find drop height
-                int dropY = -4;
-                while(!collidesPiece(cur.x, dropY+1, cur.type, cur.rotation)) dropY++;
-                cur.y = dropY;
-                lockPiece();
+                // Use the Tetromino matrix to place the piece directly on the board
+                const Matrix4 &shape = tetrominoes[cur.type].states[move.rotationIndex];
+                int top = board.dropPosition(shape, move.leftC);
+                if (top == INT_MIN) {
+                    gameOver = true;
+                } else {
+                    // Place and score like original tetris.cpp
+                    board.placePiece(shape, top, move.leftC, tetrominoes[cur.type].colorId);
+                    int cleared = board.clearLines();
+                    if (cleared > 0) {
+                        lines += cleared;
+                        // original scoring: 100 * (2^(lines-1)) per clear-set
+                        score += 100 * (1 << (cleared - 1));
+                        level = 1 + lines / 10;
+                    }
+                    // Spawn next piece (spawnPiece uses bag.next())
+                    spawnPiece();
+                }
             }
         }
     }
