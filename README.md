@@ -90,47 +90,9 @@ If your system does not provide `libraylib` via package manager, install raylib 
 
 ---
 
-## Potential Enhancements
-
-If you want stronger AI behavior consider:
-
-- Implementing depth-2 or more lookahead (DFS) with a copy of the bag/queue.
-- Beam search: keep top-K board states at each depth (reduces branching).
-- Reinforcement learning or Monte Carlo Tree Search (advanced).
-
-I can implement a depth-2 lookahead with beam pruning if you'd like — tell me preferred defaults (depth=2, beam=8 is a reasonable starting point).
-
----
-
-## Troubleshooting
-
-- If the window does not open, ensure that `raylib` is installed and the linker flags are correct for your platform.
-- Missing symbols during link: verify you have the necessary development packages (GL, X11, pthread, etc.).
-
----
-
-## Contributing
-
-Contributions and improvements are welcome. Suggested small steps:
-- Add configurable AI depth and beam size (menu or compile-time macro).
-- Add hold-piece functionality and improved spawning rules.
-- Tweak heuristic weights or allow runtime tuning.
-
-Please open a PR or ask me to implement a specific improvement.
-
----
-
-## License & Credits
-
-This repository is a small learning/demo project. No explicit license file included — add one if you plan to publish publicly.
-
-Original code pieces were merged from local files `tetris.cpp` and `exp.cpp` (user-provided).
-
-
----
-
-If you'd like, I can also:
-- Add a README section describing how to tweak AI parameters in the code,
-- Implement a depth-2 lookahead AI and update the README with results.
-
-Tell me which you'd prefer next.
+<p align="center">
+  Created by:
+<p align="center">
+	<a href="https://github.com/Husn-ur-rehman"><img src="https://img.shields.io/badge/-Husn%20Ur%20Rehman%20Khan-black%20?style=flat&logo=github&logoColor=white"/></a>
+	<a href="https://github.com/DanyalAbbas"><img src="https://img.shields.io/badge/-Danyal%20Abbas-black%20?style=flat&logo=github&logoColor=white"/></a>
+  <a href="https://github.com/MoazzamFarooqui"><img src="https://img.shields.io/badge/-Moazzam%20Farooqui-black%20?style=flat&logo=github&logoColor=white"/></a>
