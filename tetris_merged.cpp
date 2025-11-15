@@ -375,8 +375,10 @@ public:
                 if(pieceCell(type, rotation, i, j)){
                     int bx = px + j;
                     int by = py + i;
-                    if(bx < 0 || bx >= BOARD_W || by < 0 || by >= BOARD_H) return true;
-                    if(board.cells[by][bx] != 0) return true;
+                    // Out-of-horizontal-bounds or below board is a collision
+                    if(bx < 0 || bx >= BOARD_W || by >= BOARD_H) return true;
+                    // If the cell is within visible board area, check occupancy.
+                    if(by >= 0 && board.cells[by][bx] != 0) return true;
                 }
             }
         }
