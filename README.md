@@ -8,7 +8,11 @@ This repository contains a small, single-file Tetris implementation using raylib
 The merged file `tetris_merged.cpp` provides a menu to choose between modes and retains much of the functionality from the original `tetris.cpp` (AI) and `exp.cpp` (manual).
 
 ---
-
+<p align="center">
+  <img src="./Images/1.png" width="30%" />
+  <img src="./Images/2.png" width="30%" />
+  <img src="./Images/3.png" width="30%" />
+</p>
 
 ## Features
 
