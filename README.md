@@ -9,6 +9,12 @@ The merged file `tetris_merged.cpp` provides a menu to choose between modes and 
 
 ---
 
+<p align="center">
+  <img src="./Images/1.png" width="30%" />
+  <img src="./Images/2.png" width="30%" />
+  <img src="./Images/3.png" width="30%" />
+</p>
+
 ## Features
 
 - 10x20 playfield using a 7-bag tetromino randomizer.
@@ -93,6 +99,6 @@ If your system does not provide `libraylib` via package manager, install raylib 
 <p align="center">
   Created by:
 <p align="center">
-	<a href="https://github.com/Husn-ur-rehman"><img src="https://img.shields.io/badge/-Husn%20Ur%20Rehman%20Khan-black%20?style=flat&logo=github&logoColor=white"/></a>
+	<a href="https://github.com/Husn-ur-rehman"><img src="https://img.shields.io/badge/-Husn%20Ur%20Rehman-black%20?style=flat&logo=github&logoColor=white"/></a>
 	<a href="https://github.com/DanyalAbbas"><img src="https://img.shields.io/badge/-Danyal%20Abbas-black%20?style=flat&logo=github&logoColor=white"/></a>
   <a href="https://github.com/MoazzamFarooqui"><img src="https://img.shields.io/badge/-Moazzam%20Farooqui-black%20?style=flat&logo=github&logoColor=white"/></a>
