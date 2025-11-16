@@ -89,3 +89,4 @@ If your system does not provide `libraylib` via package manager, install raylib 
 <p align="center">
 	<a href="https://github.com/Husn-ur-rehman"><img src="https://img.shields.io/badge/-Husn%20Ur%20Rehman-black%20?style=flat&logo=github&logoColor=white"/></a>
 	<a href="https://github.com/DanyalAbbas"><img src="https://img.shields.io/badge/-Danyal%20Abbas-black%20?style=flat&logo=github&logoColor=white"/></a>
+	<a href="https://github.com/MoazzamFarooqui"><img src="https://img.shields.io/badge/-Moazzam%20Farooqui-black%20?style=flat&logo=github&logoColor=white"/></a>
