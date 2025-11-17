@@ -1,20 +1,3 @@
-// tetris_merged.cpp
-// Tetris with both Manual and AI modes
-// Single-file implementation using raylib.
-// 
-// Features:
-//  - Game Mode Selection (Manual or AI)
-//  - Manual Mode: User-controlled piece placement
-//  - AI Mode: Automatic placement using heuristic evaluation
-//  - 10x20 board with 7-bag randomizer
-//  - Collision detection and line clearing
-//  - Scoring system with level progression
-//
-// Build (Linux):
-//   g++ -std=c++17 tetris_merged.cpp -o tetris_merged -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
-// Build (Windows - MSYS2):
-//   g++ -std=c++17 tetris_merged.cpp -o tetris_merged.exe -lraylib -lopengl32 -lgdi32 -lwinmm
-
 #include <raylib.h>
 #include <vector>
 #include <array>
