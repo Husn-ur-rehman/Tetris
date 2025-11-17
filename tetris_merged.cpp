@@ -387,7 +387,7 @@ public:
         int cleared = board.clearLines();
         if(cleared > 0){
             lines += cleared;
-            static const int pointsPer[5] = {0,40,100,300,1200};
+            static const int pointsPer[5] = {0,100,100,300,1200};
             score += pointsPer[cleared] * level;
             level = 1 + lines / 10;
         }
@@ -409,22 +409,18 @@ public:
             if(move.score < -1e8) {
                 gameOver = true;
             } else {
-                // Use the Tetromino matrix to place the piece directly on the board
                 const Matrix4 &shape = tetrominoes[cur.type].states[move.rotationIndex];
                 int top = board.dropPosition(shape, move.leftC);
                 if (top == INT_MIN) {
                     gameOver = true;
                 } else {
-                    // Place and score like original tetris.cpp
                     board.placePiece(shape, top, move.leftC, tetrominoes[cur.type].colorId);
                     int cleared = board.clearLines();
                     if (cleared > 0) {
                         lines += cleared;
-                        // original scoring: 100 * (2^(lines-1)) per clear-set
                         score += 100 * (1 << (cleared - 1));
                         level = 1 + lines / 10;
                     }
-                    // Spawn next piece (spawnPiece uses bag.next())
                     spawnPiece();
                 }
             }
